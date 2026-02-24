@@ -1,0 +1,15 @@
+# Environnements virtuels
+venv/
+.env
+__pycache__/
+
+# Modèles volumineux ou temporaires (si besoin, ici on garde les pkl pour le livrable)
+# model.pkl sera gardé car c'est le livrable
+# data/telco_churn.csv sera gardé pour la reproductibilité (Dataset public)
+
+# Fichiers OS
+.DS_Store
+Thumbs.db
+
+# Fichiers Jupyter de checkpoint
+.ipynb_checkpoints/
