@@ -36,3 +36,10 @@ Ce projet présente une pipeline complète de Data Science pour la prédiction d
 
 ---
 *Livrable réalisé par Adam Beloucif.*
+
+
+---
+
+<p align="center">
+  <sub>Par <a href="https://adam.beloucif.com">Adam Beloucif</a> · Data Engineer & Fullstack Developer · <a href="https://github.com/Adam-Blf">GitHub</a></sub>
+</p>
