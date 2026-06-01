@@ -26,6 +26,32 @@ DATE        : Février 2026
 
 Ce projet présente une pipeline complète de Data Science pour la prédiction de la perte de clients (Churn) dans le secteur des télécommunications.
 
+## Architecture
+
+```mermaid
+flowchart TB
+    A["data/telco_churn.csv<br/>jeu de donnees source"]
+    B["eda.ipynb · scripts/eda_initial.py<br/>analyse exploratoire"]
+    C["scripts/train_supervised.py<br/>RandomForest · classification churn"]
+    D["scripts/train_unsupervised.py<br/>K-Means · segmentation clients"]
+    E["api/*.pkl<br/>model · scaler · features serialises"]
+    F["api/main.py<br/>FastAPI · validation Pydantic"]
+    G["POST /predict<br/>prediction churn client"]
+    H["tests/test_api.py<br/>tests endpoint"]
+    I["reports/<br/>graphiques EDA · rapport PDF"]
+    J["Dockerfile<br/>conteneurisation"]
+    A --> B
+    B --> C
+    B --> D
+    C --> E
+    D --> E
+    E --> F
+    F --> G
+    F --> H
+    B --> I
+    F --> J
+```
+
 ## 📁 Structure du Projet
 
 - `data/` : Jeu de données source (`telco_churn.csv`).
