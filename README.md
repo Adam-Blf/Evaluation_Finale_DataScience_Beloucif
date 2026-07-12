@@ -31,14 +31,14 @@ Ce projet présente une pipeline complète de Data Science pour la prédiction d
 ```mermaid
 flowchart TB
     A["data/telco_churn.csv<br/>jeu de donnees source"]
-    B["eda.ipynb · scripts/eda_initial.py<br/>analyse exploratoire"]
-    C["scripts/train_supervised.py<br/>RandomForest · classification churn"]
-    D["scripts/train_unsupervised.py<br/>K-Means · segmentation clients"]
-    E["api/*.pkl<br/>model · scaler · features serialises"]
-    F["api/main.py<br/>FastAPI · validation Pydantic"]
+    B["eda.ipynb - scripts/eda_initial.py<br/>analyse exploratoire"]
+    C["scripts/train_supervised.py<br/>RandomForest - classification churn"]
+    D["scripts/train_unsupervised.py<br/>K-Means - segmentation clients"]
+    E["api/*.pkl<br/>model - scaler - features serialises"]
+    F["api/main.py<br/>FastAPI - validation Pydantic"]
     G["POST /predict<br/>prediction churn client"]
     H["tests/test_api.py<br/>tests endpoint"]
-    I["reports/<br/>graphiques EDA · rapport PDF"]
+    I["reports/<br/>graphiques EDA - rapport PDF"]
     J["Dockerfile<br/>conteneurisation"]
     A --> B
     B --> C
@@ -80,7 +80,7 @@ flowchart TB
 ---
 
 <p align="center">
-  <sub>Par <a href="https://adam.beloucif.com">Adam Beloucif</a> · Data Engineer & Fullstack Developer · <a href="https://github.com/Adam-Blf">GitHub</a> · <a href="https://www.linkedin.com/in/adambeloucif/">LinkedIn</a></sub>
+  <sub>Par <a href="https://adam.beloucif.com">Adam Beloucif</a> - Data Engineer & Fullstack Developer - <a href="https://github.com/Adam-Blf">GitHub</a> - <a href="https://www.linkedin.com/in/adambeloucif/">LinkedIn</a></sub>
 </p>
 
 
